@@ -27,14 +27,9 @@
         </ul>
       </div>
 
-      <!-- выбор категории и карточки с блогами -->
+      <!-- Начало страницы -->
       <div class="blog__page">
-        <!-- выбор категории -->
-
-        <!-- блог с карточкой -->
         <div class="blog__posts">
-          <!-- пост карточки -->
-
           <a href="" class="posts__category">Подъемники</a>
           <h2 class="blog__title_text">
             Преимущества аренды подъемника в <br />
@@ -44,43 +39,48 @@
           <!-- slider с фотографиями -->
           <div class="slider carousel-container">
             <div class="carousel">
+              <!-- 1 фотография -->
               <div class="item active">
                 <img src="slider.png" alt="" />
-
                 <div class="slider__flex">
                   <p class="slider__text caption">Рабочий процесс</p>
                   <p class="slider__text caption">1 / 12</p>
-                  <!-- !!!!!!! -->
                 </div>
               </div>
+
+              <!-- 2 фотография -->
               <div class="item">
                 <img src="slider2.png" alt="" />
-
                 <div class="slider__flex">
                   <p class="slider__text caption">Рабочий процесс</p>
                   <p class="slider__text caption">2 / 12</p>
-                  <!-- !!!!!!! -->
                 </div>
               </div>
+
+              <!-- 3 фотография -->
               <div class="item">
                 <img src="slider.png" alt="" />
 
                 <div class="slider__flex">
                   <p class="slider__text caption">Рабочий процесс</p>
                   <p class="slider__text caption">3 / 12</p>
-                  <!-- !!!!!!! -->
                 </div>
               </div>
             </div>
+
+            <!-- кнопка вперед -->
             <button class="btn prev">
               <img src="next__button.png" alt="" />
             </button>
+
+            <!-- кнопка назад -->
             <button class="btn next">
               <img src="next__button2.png" alt="" />
             </button>
             <div class="dots"></div>
           </div>
 
+          <!-- тексты блога -->
           <p class="blog__text">
             Для уплотнения оснований при выполнении дорожно-строительных работ
             или строительстве не обойтись без специализированной техники. Если
@@ -104,14 +104,12 @@
             квалифицированных операторов, которую мы сможем доставить на объект
             в течение нескольких часов после заказа.
           </p>
-          <!-- slider с фотографиями -->
+          <!-- фото -->
           <div class="slider">
             <img src="slider.png" alt="" />
 
             <div class="slider__flex">
               <p class="slider__text">Рабочий процесс</p>
-
-              <!-- !!!!!!! -->
             </div>
           </div>
 
@@ -217,9 +215,9 @@
             <p class="blog__text_7">
               Маневренность.
               <span class="blog__text_7_span">
-                 Если планируется строительство прямой однополосной дороги, то
+                Если планируется строительство прямой однополосной дороги, то
                 совсем не обязательно арендовать самодвижущийся дорогостоящий
-                каток.  При выполнении таких работ необходимости в частых
+                каток. При выполнении таких работ необходимости в частых
                 поворотах техники нет.
               </span>
             </p>
@@ -278,10 +276,9 @@
             более смен. Обращаем ваше внимание, что дорожные катки относятся к
             тихоходной технике.
           </p>
-
-          <!-- конец -->
         </div>
 
+        <!-- выбор категорий техники -->
         <div class="category">
           <p class="category__title">Темы</p>
           <ul class="category__ul">
@@ -371,6 +368,7 @@
   </body>
 
   <script>
+    // слайдер
     document.addEventListener("DOMContentLoaded", function () {
       let carousel = document.querySelector(".carousel");
       let items = carousel.querySelectorAll(".item");
@@ -422,5 +420,7 @@
         });
       });
     });
+
+    // конец слайдера
   </script>
 </html>
