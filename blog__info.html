@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
-    <header>
+    <!-- <header>
       <img class="" src="header.png" alt="" />
-    </header>
+    </header> -->
 
     <section class="main">
       <!-- переход Главная >> Блог -->
@@ -29,6 +29,51 @@
 
       <!-- Начало страницы -->
       <div class="blog__page">
+        <!-- мобильная версия выбора категорий -->
+        <div class="category__mobile">
+          <div class="accordion-item">
+            <button class="category__title_button">
+              Темы
+              <img src="container__button_open.png" alt="" class="posts__img" />
+            </button>
+          </div>
+          <div class="category__container_open">
+            <ul class="category__ul_mobile">
+              <li class="category__container_mobile">
+                <a href="" class="category__text_mobile">Подъемники</a>
+                <p class="category__text_subtitle_mobile">12</p>
+              </li>
+
+              <li class="category__container_mobile">
+                <a href="" class="category__text_mobile">Экскаваторы</a>
+                <p class="category__text_subtitle_mobile">10</p>
+              </li>
+
+              <li class="category__container_mobile">
+                <a href="" class="category__text_mobile">Длинномеры</a>
+                <p class="category__text_subtitle_mobile">9</p>
+              </li>
+
+              <li class="category__container_mobile">
+                <a href="" class="category__text_mobile">Грузовые катки</a>
+                <p class="category__text_subtitle_mobile">5</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container__background_mobile">
+            <div class="container__flex">
+              <p class="container__price_mobile">
+                Точный расчет стоимости <br />
+                вашего забора
+              </p>
+              <img src="calk.png" alt="" class="container__img_mobile" />
+            </div>
+            <button class="container__button_mobile">Рассчитать цену</button>
+          </div>
+        </div>
+        <!-- мобильная версия выбора категорий -->
+
         <div class="blog__posts">
           <a href="" class="posts__category">Подъемники</a>
           <h2 class="blog__title_text">
@@ -106,7 +151,7 @@
           </p>
           <!-- фото -->
           <div class="slider">
-            <img src="slider.png" alt="" />
+            <img src="slider.png" alt="" class="slider__foto" />
 
             <div class="slider__flex">
               <p class="slider__text">Рабочий процесс</p>
@@ -170,7 +215,7 @@
             </p>
           </div>
 
-          <p class="blog__text_4">
+          <p class="blog__text_4_1">
             В каталоге доступных для аренды моделей в компании «Катет»
             представлены асфальтовые и грунтовые катки с рабочей массой до 14
             тонн при рабочей ширине до 2,2 метров. Это позволит вам подобрать
@@ -316,52 +361,53 @@
 
       <!-- блок свяжитесь с нами -->
       <div class="feedback">
-        <div class="feedback__flex">
-          <h2 class="feedback__title">
-            Требуется аренда спецтехники в Москве и МО? Свяжитесь с нами!
-          </h2>
-          <img src="feedback__img.png" alt="" class="feedback__img" />
-        </div>
-        <div class="feedback__container">
-          <!-- имя -->
-          <div class="input__container">
-            <p class="input__text">Ваше имя</p>
-            <input
-              class="feedback__input"
-              type="name"
-              placeholder="Введите имя..."
-            />
+        <div class="feedback__main">
+          <div class="feedback__flex">
+            <h2 class="feedback__title">
+              Требуется аренда спецтехники в Москве и МО? Свяжитесь с нами!
+            </h2>
+            <img src="feedback__img.png" alt="" class="feedback__img" />
           </div>
+          <div class="feedback__container">
+            <div class="input__container">
+              <p class="input__text">Ваше имя</p>
+              <input
+                class="feedback__input"
+                type="name"
+                placeholder="Введите имя..."
+              />
+            </div>
 
-          <div class="input__container">
-            <p class="input__text">
-              Телефон
-              <span class="input__required">*</span>
+            <div class="input__container">
+              <p class="input__text">
+                Телефон
+                <span class="input__required">*</span>
+              </p>
+
+              <input
+                class="feedback__input"
+                type="name"
+                placeholder="+7 908 578 43 19"
+              />
+            </div>
+
+            <div class="input__container_button">
+              <p class="input__text_1">ㅤ</p>
+              <button class="button__input">Отправить заявку</button>
+            </div>
+          </div>
+          <div class="feedback__container_chexbox">
+            <input class="checkbox" type="checkbox" id="horns" name="horns" />
+            <p class="checkbox_text">
+              Я согласен с
+              <span class="checkbox_text_color">
+                политикой конфиденциальности</span
+              >
+              и даю
+              <span class="checkbox_text_color">согласие на обработку</span>
+              моих персональных данных
             </p>
-
-            <input
-              class="feedback__input"
-              type="name"
-              placeholder="+7 908 578 43 19"
-            />
           </div>
-
-          <div class="input__container_button">
-            <p class="input__text">ㅤ</p>
-            <button class="button__input">Отправить заявку</button>
-          </div>
-        </div>
-        <div class="feedback__container">
-          <input class="checkbox" type="checkbox" id="horns" name="horns" />
-          <p class="checkbox_text">
-            Я согласен с
-            <span class="checkbox_text_color">
-              политикой конфиденциальности</span
-            >
-            и даю
-            <span class="checkbox_text_color">согласие на обработку</span>
-            моих персональных данных
-          </p>
         </div>
       </div>
     </section>
@@ -422,5 +468,29 @@
     });
 
     // конец слайдера
+  </script>
+
+  <!-- скрипты категорий -->
+  <script>
+    const accordionBtns = document.querySelectorAll(".category__title_button");
+    const accordionIcons = document.querySelectorAll(".posts__img");
+
+    accordionBtns.forEach((btn, index) => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const accordionBody = this.parentElement.nextElementSibling;
+        accordionBody.classList.toggle("open");
+
+        // Изменение изображения на кнопке
+        const icon = accordionIcons[index];
+        if (this.classList.contains("active")) {
+          icon.src = "container__button_close.png";
+          icon.alt = "Закрыть";
+        } else {
+          icon.src = "container__button_open.png";
+          icon.alt = "Открыть";
+        }
+      });
+    });
   </script>
 </html>
