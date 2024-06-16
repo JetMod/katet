@@ -217,8 +217,8 @@
 
 .posts__category {
   padding: 6px 10px;
-  max-width: 105px;
-  max-height: 30px;
+  /* max-width: 105px;
+  max-height: 30px; */
   margin: 0;
   font-family: var(--font-family);
   font-weight: 600;
@@ -1573,9 +1573,9 @@
     margin: 0;
   }
 
-  .category__mobile {
+  /* .category__mobile {
     max-width: 380px;
-  }
+  } */
 
   .posts {
     display: none;
@@ -1583,14 +1583,15 @@
 
   .posts__mobile {
     display: block;
-    max-width: 320px;
+    /* max-width: 320px; */
     margin-top: 18px;
   }
 
   .auto__img {
+    display: block;
     width: 320px;
     height: 240px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .posts__card {
@@ -1604,6 +1605,7 @@
     transition: transform 0.2s;
     position: relative;
     align-items: center;
+    padding-top: 25px;
   }
 
   .posts__button {
@@ -1624,7 +1626,7 @@
 
 @media (max-width: 420px) {
   .category__mobile {
-    max-width: 320px;
+    /* max-width: 320px; */
   }
 }
 
@@ -1638,5 +1640,9 @@
   .feedback__padding {
     max-width: 320px;
     margin: 48px auto;
+  }
+
+  .posts__flex {
+    padding: 0;
   }
 }
