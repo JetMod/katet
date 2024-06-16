@@ -918,6 +918,12 @@
   display: none;
 }
 
+.posts__img {
+  width: 5px;
+  height: 10px;
+  margin-bottom: 1px;
+}
+
 @media (max-width: 1350px) {
   .posts__title {
     font-size: 24px;
@@ -1513,6 +1519,10 @@
 }
 
 @media (max-width: 660px) {
+  .blog__margin {
+    margin: 0;
+  }
+
   .feedback__img {
     width: 57px;
     height: 48px;
@@ -1625,8 +1635,12 @@
 }
 
 @media (max-width: 420px) {
+  .blog__margin {
+    margin: 0 20px;
+  }
+
   .category__mobile {
-    /* max-width: 320px; */
+    max-width: 320px;
   }
 }
 
