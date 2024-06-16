@@ -31,10 +31,14 @@
       <div class="blog__page">
         <!-- мобильная версия выбора категорий -->
         <div class="category__mobile blog__margin">
-          <div class="accordion-item">
+          <div class="category__item">
             <button class="category__title_button">
               Темы
-              <img src="container__button_open.png" alt="" class="posts__img" />
+              <img
+                src="container__button_open.png"
+                alt=""
+                class="posts__img_open"
+              />
             </button>
           </div>
           <div class="category__container_open">
@@ -473,7 +477,7 @@
   <!-- скрипты категорий -->
   <script>
     const accordionBtns = document.querySelectorAll(".category__title_button");
-    const accordionIcons = document.querySelectorAll(".posts__img");
+    const accordionIcons = document.querySelectorAll(".posts__img_open");
 
     accordionBtns.forEach((btn, index) => {
       btn.addEventListener("click", function () {

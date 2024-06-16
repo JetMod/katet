@@ -922,6 +922,15 @@
   width: 5px;
   height: 10px;
   margin-bottom: 1px;
+  margin-left: 13px;
+}
+
+.posts__img_open {
+  margin-left: 13px;
+}
+
+.posts__img_else {
+  margin-left: 12px;
 }
 
 @media (max-width: 1350px) {
@@ -1562,7 +1571,7 @@
     margin-bottom: 23px;
   }
 
-  .accordion-item {
+  .category__item {
     margin-bottom: 12px;
   }
 
@@ -1637,11 +1646,12 @@
 @media (max-width: 420px) {
   .blog__margin {
     margin: 0 20px;
-  }
-
-  .category__mobile {
     max-width: 320px;
   }
+
+  /* .category__mobile {
+    max-width: 320px;
+  } */
 }
 
 @media (max-width: 370px) {
