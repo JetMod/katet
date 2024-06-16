@@ -718,7 +718,6 @@
   border-bottom: 1px solid #dfdfdf;
   padding: 32px 0px 32px 0px;
   max-width: 100%;
-  max-height: 304px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 24px;
@@ -731,7 +730,6 @@
 .blog__text-2 {
   padding: 16px 0px;
   max-width: 100%;
-  max-height: 200px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
@@ -1000,13 +998,13 @@
   .posts__title {
     font-size: 24px;
   }
-  .posts__subtytle {
+  /* .posts__subtytle {
     font-size: 16px;
-  }
+  } */
 
-  .posts__subtytle_3 {
+  /* .posts__subtytle_3 {
     font-size: 16px;
-  }
+  } */
 
   .auto__img {
     width: 240px;
@@ -1042,10 +1040,11 @@
   .blog__text {
     /* padding: 16px 0px; */
     margin: 0;
+    margin-bottom: 32px;
   }
 
   .blog__text-2 {
-    padding: 0;
+    /* padding: 0; */
   }
 
   .blog__text_main {
@@ -1091,13 +1090,13 @@
   .posts__title {
     font-size: 20px;
   }
-  .posts__subtytle {
-    font-size: 14px;
+  /* .posts__subtytle {
+    font-size: 16px;
   }
 
   .posts__subtytle_3 {
-    font-size: 14px;
-  }
+    font-size: 16px;
+  } */
 
   .auto__img {
     width: 200px;
@@ -1117,15 +1116,15 @@
   }
 
   .blog__text {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .blog__text-2 {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .blog__text-3 {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .blog__text_main {
@@ -1136,13 +1135,13 @@
     color: #1f1f1f;
   }
 
-  .blog__text_4 {
+  /* .blog__text_4 {
     font-size: 16px;
   }
 
   .blog__text_7 {
     font-size: 16px;
-  }
+  } */
 
   .blog__text_container {
     padding: 0 0 0 20px;
@@ -1166,11 +1165,11 @@
     color: #1f1f1f;
   }
   .posts__subtytle {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .posts__subtytle_3 {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   .auto__img {
@@ -1257,9 +1256,9 @@
     font-size: 0;
   }
 
-  .feedback {
+  /* .feedback {
     margin: 0;
-  }
+  } */
 
   .feedback__title {
     font-size: 24px;
@@ -1409,7 +1408,6 @@
     font-size: 16px;
     line-height: 140%;
     color: #fff;
-
     /* margin: 0 22px 0 22px; */
     background: #5f43aa;
     cursor: pointer;
