@@ -356,6 +356,7 @@
   line-height: 110%;
   color: #1f1f1f;
   margin: 0;
+  margin-right: 15px;
 }
 
 .feedback__container {
@@ -364,6 +365,7 @@
   width: 100%;
   margin: 0 auto;
   align-items: flex-end;
+  margin-top: 24px;
 }
 
 .feedback__container_chexbox {
