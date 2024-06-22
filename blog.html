@@ -7,106 +7,100 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
-    <!-- <header>
-      <img class="" src="header.png" alt="" />
-    </header> -->
-
     <section class="container">
       <!-- переход Главная >> Блог -->
-      <div class="blog__container">
-        <ul class="blog__ul">
-          <li><a href="index.html" class="blog__index">Главная</a></li>
-          <li class="blog__index">»</li>
-          <li><a href="blog.html" class="blog__name">Блог</a></li>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__ul">
+          <li><a href="index.html" class="breadcrumbs__index">Главная</a></li>
+          <li class="breadcrumbs__index">»</li>
+          <li><a href="blog.html" class="breadcrumbs__name">Блог</a></li>
         </ul>
-        <h1 class="blog__title">Блог</h1>
+        <h1 class="breadcrumbs__title">Блог</h1>
       </div>
 
       <!-- выбор категории и карточки с блогами -->
       <div class="page">
         <!-- выбор категории -->
-        <div class="category">
-          <p class="category__title">Темы</p>
-          <ul class="category__ul">
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Подъемники <span class="category__span">12</span></a
+        <div class="sidebar">
+          <p class="sidebar__title">Темы</p>
+          <ul class="sidebar__ul">
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Подъемники <span class="sidebar__span">12</span></a
               >
-              <!-- <p class="category__text_subtitle">12</p> -->
+              <!-- <p class="sidebar__text_subtitle">12</p> -->
             </li>
 
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Экскаваторы <span class="category__span">10</span></a
-              >
-            </li>
-
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Длинномеры <span class="category__span">9</span></a
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Экскаваторы <span class="sidebar__span">10</span></a
               >
             </li>
 
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Грузовые катки <span class="category__span">5</span></a
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Длинномеры <span class="sidebar__span">9</span></a
+              >
+            </li>
+
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Грузовые катки <span class="sidebar__span">5</span></a
               >
             </li>
           </ul>
 
-          <div class="container__background">
-            <img src="calk.png" alt="" class="container__img" />
-            <p class="container__price">
-              Точный расчет стоимости вашего забора
-            </p>
-            <button class="container__button">Рассчитать цену</button>
+          <div class="sidebar__background">
+            <img src="calk.svg" alt="" class="sidebar__img" />
+            <p class="sidebar__price">Точный расчет стоимости вашего забора</p>
+            <button class="sidebar__button">Рассчитать цену</button>
           </div>
         </div>
 
         <!-- мобильная версия выбора категорий -->
-        <div class="category__mobile">
-          <div class="category__item">
-            <button class="category__title_button">
+        <div class="sidebar__mobile">
+          <div class="sidebar__item">
+            <button class="sidebar__title_button">
               Темы
               <img
-                src="container__button_open.png"
+                src="sidebar__button_open.svg"
                 alt=""
-                class="posts__img_open"
+                class="post__img_open"
               />
             </button>
           </div>
-          <div class="category__container_open">
-            <ul class="category__ul_mobile">
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Подъемники</a>
-                <p class="category__text_subtitle_mobile">12</p>
+          <div class="sidebar__container_open">
+            <ul class="sidebar__ul_mobile">
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Подъемники</a>
+                <p class="sidebar__text_subtitle_mobile">12</p>
               </li>
 
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Экскаваторы</a>
-                <p class="category__text_subtitle_mobile">10</p>
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Экскаваторы</a>
+                <p class="sidebar__text_subtitle_mobile">10</p>
               </li>
 
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Длинномеры</a>
-                <p class="category__text_subtitle_mobile">9</p>
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Длинномеры</a>
+                <p class="sidebar__text_subtitle_mobile">9</p>
               </li>
 
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Грузовые катки</a>
-                <p class="category__text_subtitle_mobile">5</p>
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Грузовые катки</a>
+                <p class="sidebar__text_subtitle_mobile">5</p>
               </li>
             </ul>
           </div>
 
-          <div class="container__background_mobile">
-            <div class="container__flex">
-              <p class="container__price_mobile">
+          <div class="sidebar__background_mobile">
+            <div class="sidebar__flex">
+              <p class="sidebar__price_mobile">
                 Точный расчет стоимости вашего забора
               </p>
-              <img src="calk.png" alt="" class="container__img_mobile" />
+              <img src="calk.svg" alt="" class="sidebar__img_mobile" />
             </div>
-            <button class="container__button_mobile">Рассчитать цену</button>
+            <button class="sidebar__button_mobile">Рассчитать цену</button>
           </div>
         </div>
         <!-- мобильная версия выбора категорий -->
@@ -115,12 +109,12 @@
         <div class="posts">
           <!-- пост блога 1 -->
 
-          <div class="posts__flex">
+          <div class="post__flex">
             <a href="blog__info.html" class="blog__info"></a>
-            <div class="posts__card">
-              <a href="" class="posts__category">Подъемники</a>
-              <h2 class="posts__title">Преимущества аренды подъемника</h2>
-              <p class="posts__subtytle">
+            <div class="post__card">
+              <a href="" class="post__category">Подъемники</a>
+              <h2 class="post__title">Преимущества аренды подъемника</h2>
+              <p class="post__subtytle">
                 Решение арендовать строительный подъемник — это возможность
                 сократить расходы на выполнение поставленной задачи без потери
                 качества. Такая техника необходима для подъема различных
@@ -128,40 +122,40 @@
                 и снаружи помещений.
               </p>
 
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
+              <button class="post__button">
+                Читать <img src="post__next.svg" alt="" class="post__img" />
               </button>
             </div>
             <img src="auto1.jpg" alt="" class="auto__img" />
           </div>
 
           <!-- пост блога 2 -->
-          <div class="posts__flex">
+          <div class="post__flex">
             <a href="blog__info.html" class="blog__info"></a>
-            <div class="posts__card">
-              <a href="" class="posts__category">Экскаваторы</a>
-              <h2 class="posts__title">Какой экскаватор взять в аренду</h2>
-              <p class="posts__subtytle">
+            <div class="post__card">
+              <a href="" class="post__category">Экскаваторы</a>
+              <h2 class="post__title">Какой экскаватор взять в аренду</h2>
+              <p class="post__subtytle">
                 Выбирая, какой подъемник снять в аренду, обращайте внимание не
                 только на тип механизма, но и условия, в которых предстоит
                 эксплуатация спецтехники. Важную роль играет рабочая высота...
                 грузоподъемность и масса автоподъемника.
               </p>
 
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
+              <button class="post__button">
+                Читать <img src="post__next.svg" alt="" class="post__img" />
               </button>
             </div>
             <img src="auto2.jpg" alt="" class="auto__img" />
           </div>
 
           <!-- пост блога 3 -->
-          <div class="posts__flex">
+          <div class="post__flex">
             <a href="blog__info.html" class="blog__info"></a>
-            <div class="posts__card_3">
-              <a href="" class="posts__category">Длинномеры</a>
-              <h2 class="posts__title">Варианты недорогих длинномеров</h2>
-              <p class="posts__subtytle_3">
+            <div class="post__card">
+              <a href="" class="post__category">Длинномеры</a>
+              <h2 class="post__title">Варианты недорогих длинномеров</h2>
+              <p class="post__subtytle_3">
                 Любой частный участок нуждается в качественном ограждении. И
                 дача не исключение. Конечно, монументальное и дорогостоящее
                 ограждение здесь вряд ли нужно, но без прочного и долговечного
@@ -172,21 +166,21 @@
                 ограды множество, а
               </p>
 
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
+              <button class="post__button">
+                Читать <img src="post__next.svg" alt="" class="post__img" />
               </button>
             </div>
           </div>
 
           <!-- пост блога 4 -->
-          <div class="posts__flex">
+          <div class="post__flex">
             <a href="blog__info.html" class="blog__info"></a>
-            <div class="posts__card">
-              <a href="" class="posts__category">Подъемники</a>
-              <h2 class="posts__title">
+            <div class="post__card">
+              <a href="" class="post__category">Подъемники</a>
+              <h2 class="post__title">
                 Стоимость аренды строительного подъемника в Москве
               </h2>
-              <p class="posts__subtytle">
+              <p class="post__subtytle">
                 Цена проката спецтехники формируется для каждого заказа
                 индивидуально. На нашем сайте вы можете ознакомиться со
                 стоимостью подъемника в аренду на час в Москве. Окончательная
@@ -194,22 +188,22 @@
                 часов/суток проката.
               </p>
 
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
+              <button class="post__button">
+                Читать <img src="post__next.svg" alt="" class="post__img" />
               </button>
             </div>
             <img src="auto4.jpg" alt="" class="auto__img" />
           </div>
 
           <!-- пост блога 5 -->
-          <div class="posts__flex">
+          <div class="post__flex">
             <a href="blog__info.html" class="blog__info"></a>
-            <div class="posts__card">
-              <a href="" class="posts__category">Грузовые катки</a>
-              <h2 class="posts__title">
+            <div class="post__card">
+              <a href="" class="post__category">Грузовые катки</a>
+              <h2 class="post__title">
                 Почему нам доверяют при аренде грузового катка
               </h2>
-              <p class="posts__subtytle">
+              <p class="post__subtytle">
                 Компания «Катет» сдает напрокат автоподъемники и другую
                 автомобильную спецтехнику, которая гарантирует высокий уровень
                 безопасности. Вся наша технику имеет лицензию Ростехнадзора,
@@ -217,143 +211,19 @@
                 проверяется механиками перед каждый рейсом.
               </p>
 
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
+              <button class="post__button">
+                Читать <img src="post__next.svg" alt="" class="post__img" />
               </button>
             </div>
             <img src="auto5.jpg" alt="" class="auto__img" />
           </div>
 
           <!-- показать еще -->
-          <button class="posts__button_else">
+          <button class="post__button_else">
             Загрузить еще
-            <img src="post__next_else.svg" alt="" class="posts__img_else" />
+            <img src="post__next_else.svg" alt="" class="post__img_else" />
           </button>
         </div>
-
-        <!-- мобильная версия блога -->
-        <div class="posts__mobile">
-          <!-- пост блога 1 -->
-
-          <div class="posts__flex">
-            <a href="blog__info.html" class="blog__info"></a>
-            <img src="auto1.jpg" alt="" class="auto__img" />
-
-            <div class="posts__card">
-              <a href="" class="posts__category">Подъемники</a>
-              <h2 class="posts__title">Преимущества аренды подъемника</h2>
-              <p class="posts__subtytle">
-                Решение арендовать строительный подъемник — это возможность
-                сократить расходы на выполнение поставленной задачи без потери
-                качества. Такая техника необходима для подъема различных
-                грузов... например, ГКЛ и других строительных материалов внутри
-                и снаружи помещений.
-              </p>
-
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
-              </button>
-            </div>
-          </div>
-
-          <!-- пост блога 2 -->
-          <div class="posts__flex">
-            <a href="blog__info.html" class="blog__info"></a>
-            <img src="auto2.jpg" alt="" class="auto__img" />
-
-            <div class="posts__card">
-              <a href="" class="posts__category">Экскаваторы</a>
-              <h2 class="posts__title">Какой экскаватор взять в аренду</h2>
-              <p class="posts__subtytle">
-                Выбирая, какой подъемник снять в аренду, обращайте внимание не
-                только на тип механизма, но и условия, в которых предстоит
-                эксплуатация спецтехники. Важную роль играет рабочая высота,
-                грузоподъемность и масса автоподъемника.
-              </p>
-
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
-              </button>
-            </div>
-          </div>
-
-          <!-- пост блога 3 -->
-          <div class="posts__flex">
-            <a href="blog__info.html" class="blog__info"></a>
-            <div class="posts__card_3">
-              <a href="" class="posts__category">Длинномеры</a>
-              <h2 class="posts__title">Варианты недорогих длинномеров</h2>
-              <p class="posts__subtytle">
-                Любой частный участок нуждается в качественном ограждении. И
-                дача не исключение. Конечно, монументальное и дорогостоящее
-                ограждение здесь вряд ли нужно, но без прочного и долговечного
-                забора не обойтись. На современном рынке представлено немало
-                вариантов недорогих заборов на дачу, которые... то же время
-                являются надежными, практичными и эстетичными. Сетка-рабица,
-                профнастил, дерево, евроштакетник - материалов для возведения
-                ограды множество, а
-              </p>
-
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
-              </button>
-            </div>
-          </div>
-
-          <!-- пост блога 4 -->
-          <div class="posts__flex">
-            <a href="blog__info.html" class="blog__info"></a>
-            <img src="auto1.jpg" alt="" class="auto__img" />
-
-            <div class="posts__card">
-              <a href="" class="posts__category">Подъемники</a>
-              <h2 class="posts__title">
-                Стоимость аренды строительного подъемника в Москве
-              </h2>
-              <p class="posts__subtytle">
-                Цена проката спецтехники формируется для каждого заказа
-                индивидуально. На нашем сайте вы можете ознакомиться со
-                стоимостью подъемника в аренду на час в Москве. Окончательная
-                цена будет зависеть от расположения объекта и количества
-                часов/суток проката.
-              </p>
-
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
-              </button>
-            </div>
-          </div>
-
-          <!-- пост блога 5 -->
-          <div class="posts__flex">
-            <a href="blog__info.html" class="blog__info"></a>
-            <img src="auto1.jpg" alt="" class="auto__img" />
-
-            <div class="posts__card">
-              <a href="" class="posts__category">Грузовые катки</a>
-              <h2 class="posts__title">
-                Почему нам доверяют при аренде грузового катка
-              </h2>
-              <p class="posts__subtytle">
-                Компания «Катет» сдает напрокат автоподъемники и другую
-                автомобильную спецтехнику, которая гарантирует высокий уровень
-                безопасности. Вся наша технику имеет лицензию Ростехнадзора,
-                находится в идеальном техническом состоянии и тщательно
-                проверяется механиками перед каждый рейсом.
-              </p>
-
-              <button class="posts__button">
-                Читать <img src="posts__next.png" alt="" class="posts__img" />
-              </button>
-            </div>
-          </div>
-          <!-- показать еще -->
-          <button class="posts__button_else">
-            Загрузить еще
-            <img src="post__next_else.svg" alt="" class="posts__img_else" />
-          </button>
-        </div>
-        <!-- мобильная версия блога -->
       </div>
 
       <!-- блок свяжитесь с нами -->
@@ -363,7 +233,7 @@
             <h2 class="feedback__title">
               Требуется аренда спецтехники в Москве и МО? Свяжитесь с нами!
             </h2>
-            <img src="feedback__img.png" alt="" class="feedback__img" />
+            <img src="feedback__img.svg" alt="" class="feedback__img" />
           </div>
           <div class="feedback__container">
             <div class="input__container">
@@ -413,7 +283,7 @@
   <!-- скрипты категорий -->
   <script>
     const accordionBtns = document.querySelectorAll(".category__title_button");
-    const accordionIcons = document.querySelectorAll(".posts__img_open");
+    const accordionIcons = document.querySelectorAll(".post__img_open");
 
     accordionBtns.forEach((btn, index) => {
       btn.addEventListener("click", function () {
@@ -424,10 +294,10 @@
         // Изменение изображения на кнопке
         const icon = accordionIcons[index];
         if (this.classList.contains("active")) {
-          icon.src = "container__button_close.png";
+          icon.src = "sidebar__button_close.svg";
           icon.alt = "Закрыть";
         } else {
-          icon.src = "container__button_open.png";
+          icon.src = "sidebar__button_open.svg";
           icon.alt = "Открыть";
         }
       });

@@ -7,22 +7,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
-    <!-- <header>
-      <img class="" src="header.png" alt="" />
-    </header> -->
-
     <section class="main">
       <!-- переход Главная >> Блог -->
-      <div class="blog__container blog__margin">
-        <ul class="blog__ul blog__ul_padding">
-          <li><a href="index.html" class="blog__index">Главная</a></li>
-          <li class="blog__index">»</li>
-          <li><a href="blog.html" class="blog__index">Блог</a></li>
-          <li class="blog__index">»</li>
-          <li>
-            <a href="blog.html" class="blog__name"
-              >Преимущества аренды подъемника в Москве и МО</a
-            >
+      <div class="breadcrumbs breadcrumbs__padding">
+        <ul class="breadcrumbs__ul breadcrumbs__ul_padding">
+          <li><a href="index.html" class="breadcrumbs__index">Главная</a></li>
+          <li class="breadcrumbs__index">»</li>
+          <li><a href="blog.html" class="breadcrumbs__index">Блог</a></li>
+          <li class="breadcrumbs__index">»</li>
+          <li class="breadcrumbs__name">
+            Преимущества аренды подъемника в Москве и МО
           </li>
         </ul>
       </div>
@@ -30,55 +24,55 @@
       <!-- Начало страницы -->
       <div class="blog__page">
         <!-- мобильная версия выбора категорий -->
-        <div class="category__mobile blog__margin">
-          <div class="category__item">
-            <button class="category__title_button">
+        <div class="sidebar__mobile blog__padding">
+          <div class="sidebar__item">
+            <button class="sidebar__title_button">
               Темы
               <img
-                src="container__button_open.png"
+                src="sidebar__button_open.svg"
                 alt=""
-                class="posts__img_open"
+                class="post__img_open"
               />
             </button>
           </div>
-          <div class="category__container_open">
-            <ul class="category__ul_mobile">
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Подъемники</a>
-                <p class="category__text_subtitle_mobile">12</p>
+          <div class="sidebar__container_open">
+            <ul class="sidebar__ul_mobile">
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Подъемники</a>
+                <p class="sidebar__text_subtitle_mobile">12</p>
               </li>
 
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Экскаваторы</a>
-                <p class="category__text_subtitle_mobile">10</p>
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Экскаваторы</a>
+                <p class="sidebar__text_subtitle_mobile">10</p>
               </li>
 
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Длинномеры</a>
-                <p class="category__text_subtitle_mobile">9</p>
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Длинномеры</a>
+                <p class="sidebar__text_subtitle_mobile">9</p>
               </li>
 
-              <li class="category__container_mobile">
-                <a href="" class="category__text_mobile">Грузовые катки</a>
-                <p class="category__text_subtitle_mobile">5</p>
+              <li class="sidebar__container_mobile">
+                <a href="" class="sidebar__text_mobile">Грузовые катки</a>
+                <p class="sidebar__text_subtitle_mobile">5</p>
               </li>
             </ul>
           </div>
 
-          <div class="container__background_mobile">
-            <div class="container__flex">
-              <p class="container__price_mobile">
+          <div class="sidebar__background_mobile">
+            <div class="sidebar__flex">
+              <p class="sidebar__price_mobile">
                 Точный расчет стоимости вашего забора
               </p>
-              <img src="calk.png" alt="" class="container__img_mobile" />
+              <img src="calk.svg" alt="" class="sidebar__img_mobile" />
             </div>
-            <button class="container__button_mobile">Рассчитать цену</button>
+            <button class="sidebar__button_mobile">Рассчитать цену</button>
           </div>
         </div>
         <!-- мобильная версия выбора категорий -->
 
-        <div class="blog__posts">
-          <button href="" class="posts__category">Подъемники</button>
+        <div class="blog__post">
+          <button href="" class="post__category">Подъемники</button>
           <h1 class="blog__title_text">
             Преимущества аренды подъемника в Москве и МО
           </h1>
@@ -117,12 +111,12 @@
 
             <!-- кнопка вперед -->
             <button class="btn prev">
-              <img src="next__button.png" alt="" />
+              <img src="next__button_left.svg" alt="" />
             </button>
 
             <!-- кнопка назад -->
             <button class="btn next">
-              <img src="next__button2.png" alt="" />
+              <img src="next__button_right.svg" alt="" />
             </button>
             <div class="dots"></div>
           </div>
@@ -140,7 +134,7 @@
             в течение нескольких часов после заказа.
           </p>
 
-          <p class="blog__text-2">
+          <p class="blog__text_2">
             Для уплотнения оснований при выполнении дорожно-строительных работ
             или строительстве не обойтись без специализированной техники. Если
             предстоит задача большого объема, то стоит взять в аренду грунтовый
@@ -160,7 +154,7 @@
             </div>
           </div>
 
-          <p class="blog__text-2">
+          <p class="blog__text_2">
             Цена аренды дорожного катка зависит от выбранной модели, количества
             смен и других факторов. Заправка топливом и работа опытного
             оператора входит в стоимость. У нас действуют скидки для постоянных
@@ -323,41 +317,39 @@
         </div>
 
         <!-- выбор категорий техники -->
-        <div class="category">
-          <p class="category__title">Темы</p>
-          <ul class="category__ul">
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Подъемники <span class="category__span">12</span></a
+        <div class="sidebar">
+          <p class="sidebar__title">Темы</p>
+          <ul class="sidebar__ul">
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Подъемники <span class="sidebar__span">12</span></a
               >
-              <!-- <p class="category__text_subtitle">12</p> -->
+              <!-- <p class="sidebar__text_subtitle">12</p> -->
             </li>
 
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Экскаваторы <span class="category__span">10</span></a
-              >
-            </li>
-
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Длинномеры <span class="category__span">9</span></a
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Экскаваторы <span class="sidebar__span">10</span></a
               >
             </li>
 
-            <li class="category__container">
-              <a href="" class="category__text"
-                >Грузовые катки <span class="category__span">5</span></a
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Длинномеры <span class="sidebar__span">9</span></a
+              >
+            </li>
+
+            <li class="sidebar__container">
+              <a href="" class="sidebar__text"
+                >Грузовые катки <span class="sidebar__span">5</span></a
               >
             </li>
           </ul>
 
-          <div class="container__background">
-            <img src="calk.png" alt="" class="container__img" />
-            <p class="container__price">
-              Точный расчет стоимости вашего забора
-            </p>
-            <button class="container__button">Рассчитать цену</button>
+          <div class="sidebar__background">
+            <img src="calk.svg" alt="" class="sidebar__img" />
+            <p class="sidebar__price">Точный расчет стоимости вашего забора</p>
+            <button class="sidebar__button">Рассчитать цену</button>
           </div>
         </div>
       </div>
@@ -369,7 +361,7 @@
             <h2 class="feedback__title">
               Требуется аренда спецтехники в Москве и МО? Свяжитесь с нами!
             </h2>
-            <img src="feedback__img.png" alt="" class="feedback__img" />
+            <img src="feedback__img.svg" alt="" class="feedback__img" />
           </div>
           <div class="feedback__container">
             <div class="input__container">
@@ -475,8 +467,8 @@
 
   <!-- скрипты категорий -->
   <script>
-    const accordionBtns = document.querySelectorAll(".category__title_button");
-    const accordionIcons = document.querySelectorAll(".posts__img_open");
+    const accordionBtns = document.querySelectorAll(".sidebar__title_button");
+    const accordionIcons = document.querySelectorAll(".post__img_open");
 
     accordionBtns.forEach((btn, index) => {
       btn.addEventListener("click", function () {
@@ -487,10 +479,10 @@
         // Изменение изображения на кнопке
         const icon = accordionIcons[index];
         if (this.classList.contains("active")) {
-          icon.src = "container__button_close.png";
+          icon.src = "sidebar__button_close.svg";
           icon.alt = "Закрыть";
         } else {
-          icon.src = "container__button_open.png";
+          icon.src = "sidebar__button_open.svg";
           icon.alt = "Открыть";
         }
       });
